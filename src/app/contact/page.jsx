@@ -1,7 +1,8 @@
+import PageTransitionProvider from "@/components/PageTransitionProvider";
 import React from "react";
 
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return <PageTransitionProvider>contact</PageTransitionProvider>;
 };
 
 export default ContactPage;

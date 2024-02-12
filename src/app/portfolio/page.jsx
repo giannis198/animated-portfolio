@@ -1,7 +1,8 @@
+import PageTransitionProvider from "@/components/PageTransitionProvider";
 import React from "react";
 
 const PortfolioPage = () => {
-  return <div>PortfolioPage</div>;
+  return <PageTransitionProvider>portfolio</PageTransitionProvider>;
 };
 
 export default PortfolioPage;
