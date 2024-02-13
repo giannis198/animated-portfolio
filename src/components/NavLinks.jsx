@@ -3,7 +3,7 @@
 import LinkItem from "./LinkItem";
 import { motion } from "framer-motion";
 
-const NavLinks = ({ links, isOpen }) => {
+const NavLinks = ({ links }) => {
   const linkItemVariants = {
     closed: {
       x: -10,
@@ -18,7 +18,11 @@ const NavLinks = ({ links, isOpen }) => {
   return (
     <>
       {links.map((link, index) => (
-        <motion.div variants={linkItemVariants} key={index}>
+        <motion.div
+          variants={linkItemVariants}
+          key={index}
+          className="relative z-[99999]"
+        >
           <LinkItem link={link} />
         </motion.div>
       ))}

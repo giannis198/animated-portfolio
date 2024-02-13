@@ -1,26 +1,21 @@
 import React from "react";
 
-const ExperienceItem = ({ side }) => {
+const ExperienceItem = ({ side, title, description, company, date }) => {
   return (
-    <div className="grid gap-x-4 justify-between grid-cols-[1fr_.3fr_1fr]">
+    <div className="grid gap-x-8 justify-between grid-cols-[1fr_auto_1fr]">
       {/* left */}
       <div className={`${side === "right" && "col-start-3"}`}>
         {/* title */}
         <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-          JavaScript Senior Developer
+          {title}
         </div>
         {/* Desc */}
-        <div className="p-3 text-sm italic">
-          Expert in JS, frameworks, mentoring, problem-solving, team
-          collaboration.
-        </div>
+        <div className="p-3 text-sm italic">{description}</div>
         {/* job date */}
-        <div className="p-3 text-red-400 text-sm font-semibold">
-          2024-present
-        </div>
+        <div className="p-3 text-red-400 text-sm font-semibold">{date}</div>
         {/* company name */}
         <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-          Apple
+          {company}
         </div>
       </div>
 

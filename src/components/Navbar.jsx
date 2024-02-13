@@ -93,7 +93,7 @@ const Navbar = () => {
             animate="opened"
             className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl"
           >
-            <NavLinks links={links} isOpen={isOpen} />
+            <NavLinks links={links} />
           </motion.nav>
         )}
       </div>
