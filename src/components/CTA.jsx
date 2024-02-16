@@ -28,7 +28,7 @@ const CTA = () => {
         </motion.svg>
         <Link
           href="/contact"
-          className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+          className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center z-50"
         >
           Hire Me
         </Link>
