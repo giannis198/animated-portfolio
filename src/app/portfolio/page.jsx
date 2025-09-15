@@ -29,7 +29,7 @@ const items = [
     title: "Duo Lingo Clone",
     desc: "A modern Duolingo-inspired language learning application built with Next.js 14, Drizzle ORM, PostgreSQL, and Server Actions. Featuring secure Stripe integration for payments, a sleek UI powered by ShadcnUI and Tailwind, and an engaging gamified learning experience designed for performance and scalability.🚀",
     img: "https://i.postimg.cc/D0stbfMv/Screenshot-2025-09-15-151427.png",
-    link: "#",
+    link: "https://duo-lingo-clone-tau.vercel.app/",
   },
   {
     id: 4,
