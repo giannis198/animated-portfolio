@@ -7,7 +7,7 @@ const ProjectItem = ({ color, title, img, link, desc }) => {
       className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${color}`}
     >
       <div className="flex flex-col gap-8 text-slate-800">
-        <h1 className="text-xl font=bold md:text-4xl lg:text-6xl xl:text-8xl">
+        <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
           {title}
         </h1>
         <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
