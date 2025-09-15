@@ -11,13 +11,13 @@ const ProjectItem = ({ color, title, img, link, desc }) => {
           {title}
         </h1>
         <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-          <Image src={img} alt={title} fill />
+          <Image src={img} alt={title} fill className="object-contain"  />
         </div>
         <p className="w-80 md:w-96 lg:w-500px xl:w-[600px] lg:text-lg font-semibold">
           {desc}
         </p>
         <Link
-          className="self-end text-sm p-2 md:p-4 md:text-base lg:p-8 lg:text-lg text-gray-600 bg-white rounded-lg hover:opacity-75"
+          className="self-end text-sm p-1 md:p-4 md:text-base lg:p-8 lg:text-lg text-gray-600 bg-white rounded-md hover:opacity-75"
           href={link}
         >
           Visit Project
