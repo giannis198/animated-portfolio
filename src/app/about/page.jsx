@@ -10,6 +10,18 @@ import PageTransitionProvider from "@/components/PageTransitionProvider";
 import ScrollSvg from "@/components/ScrollSvg";
 import Skill from "@/components/Skill";
 
+const highlights = [
+    "Technical Proficiency: In-depth knowledge of Next.js, React, and the MERN stack.",
+    "Problem Solver: Strong analytical mindset with innovative solution design.",
+    "Performance Optimization: Expertise in fine-tuning apps for speed and smooth UX.",
+    "Team Player: Effective communicator, excels in cross-functional collaboration.",
+    "Agile Methodology: Experienced in Agile practices and Git workflows.",
+    "Responsive Design: Skilled in creating mobile-friendly, consistent experiences.",
+    "Debugging & Troubleshooting: Quick issue identification and resolution.",
+    "Continuous Learning: Always up-to-date with latest trends and best practices.",
+    "Passion for Next.js: Enthusiastic about building modern, feature-rich apps.",
+  ];
+
 const AboutPage = () => {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({ container: containerRef });
@@ -31,23 +43,17 @@ const AboutPage = () => {
           {/* biography */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">Biography</h1>
-            <p className="text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-              eaque dolore natus alias non voluptatum incidunt consequuntur
-              quasi. Qui exercitationem animi dicta sunt nulla necessitatibus
-              sapiente quo tempora officiis voluptas.
-            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+        {highlights.map((item, index) => (
+          <li key={index} className="leading-relaxed">
+            {item}
+          </li>
+        ))}
+      </ul>
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              My work is marked by a commitment to quality, performance, and ongoing learning in the rapidly evolving field of web development.
             </span>
-            <div className="self-end w-40 h-28 relative">
-              <Image
-                src="/signature.svg"
-                alt=""
-                fill
-                className="object-contain w-auto h-auto"
-              />
-            </div>
+            
             <ScrollSvg />
           </div>
 
@@ -68,6 +74,7 @@ const AboutPage = () => {
               animate={isSkillRefInView && { x: 0 }}
               className="flex gap-4 flex-wrap"
             >
+              <Skill title="Python" />
               <Skill title="Javascript" />
               <Skill title="TypeScript" />
               <Skill title="React.js" />
@@ -80,6 +87,7 @@ const AboutPage = () => {
               <Skill title="Framer Motion" />
               <Skill title="Git" />
               <Skill title="Figma" />
+               <Skill title="Docker" />
             </motion.div>
             {/* scroll svg */}
             <ScrollSvg />
@@ -105,28 +113,35 @@ const AboutPage = () => {
               className=""
             >
               {/* list item */}
-              <ExperienceItem
+               <ExperienceItem
                 side="left"
-                title="JavaScript Senior Developer"
-                description="Expert in JS, frameworks, mentoring, problem-solving, team collaboration."
-                date="2024-present"
-                company="Apple"
+                title="Python Senior Developer"
+                description="Expert in Python, frameworks as Django, mentoring, problem-solving, team collaboration."
+                date="2019 -"
+                company="Freelancer"
               />
               <ExperienceItem
                 side="right"
-                title=" Senior React Developer"
-                description=" I spearheaded React-based application development,
-                    leveraging advanced skills."
-                date="2019 - 2024"
-                company="Microsoft"
+                title="JavaScript Senior Developer"
+                description="Expert in JS, frameworks, mentoring, problem-solving, team collaboration."
+                date="2019 -"
+                company="Freelancer"
               />
               <ExperienceItem
                 side="left"
-                title="Freelancer"
-                description=" I provided web solutions, applying a range of technologies
+                title=" Senior React Developer"
+                description=" I spearheaded React-based application development,
+                    leveraging advanced skills."
+                date="2019 - 2023"
+                company="Freelancer"
+              />
+              <ExperienceItem
+                side="right"
+                title="Senior Next.js Developer"
+                description="I provided web solutions, applying a range of technologies
                     to address client requirements."
-                date="2010 - 2019"
-                company="Freelancer.com"
+                date="2023 - 2025"
+                company="Freelancer"
               />
             </motion.div>
           </div>

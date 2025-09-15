@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 import PageTransitionProvider from "@/components/PageTransitionProvider";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -19,21 +20,20 @@ const Homepage = () => {
         <div className="flex wrapper flex-col gap-2 lg:gap-8 justify-center items-center">
           {/* text */}
           <h1 className="text-4xl md:text-6xl font-bold">
-            Lorem ipsum dolor sit amet.
+               Hi, I&apos;m Yiannis — Web Developer
           </h1>
           <p className="md:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
-            accusamus debitis dolorum minus assumenda reprehenderit nulla? Neque
-            ratione dolorum aspernatur, veritatis eos, provident, ea eveniet
-            doloremque facilis nemo doloribus libero.
+             I build modern, high-performance web applications with Next.js, React, and the 
+  MERN stack. Passionate about clean code, responsive design, and delivering 
+  seamless user experiences.
           </p>
           <div className="flex gap-x-4 w-full ">
-            <Button>View My Work</Button>
-            <Button
+            <Button as child><Link href="/portfolio">View My Work</Link></Button>
+            <Button as child
               variant="outline"
               className="bg-transparent border-black hover:bg-black hover:text-white"
             >
-              Contact Me
+              <Link href="/contact">Contact Me</Link>
             </Button>
           </div>
         </div>

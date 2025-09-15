@@ -4,42 +4,48 @@ import CTA from "@/components/CTA";
 import PageTransitionProvider from "@/components/PageTransitionProvider";
 import ProjectItem from "@/components/ProjectItem";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { Circle } from "lucide-react";
-import Link from "next/link";
 import { useRef } from "react";
 
 const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "#",
+    title: "Threads Clone",
+    desc: "A Meta Threads clone built with Next.js 14, TypeScript, Prisma ORM, and MongoDB, featuring TailwindCSS for a sleek UI and Stripe for premium features. Includes user authentication, post creation, likes, comments, and real-time updates. Optimized for performance, SEO, and scalability, leveraging server actions and API routes for efficiency.",
+    img: "https://i.postimg.cc/MpXms3zR/Screenshot-2025-09-15-151622.png",
+    link: "https://new-threads-clone.vercel.app/",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "#",
+    title: "Learning Management Platform",
+    desc: "A modern Learning Management Platform built with Next.js 13, TypeScript, Prisma ORM, and TailwindCSS, featuring Stripe for secure course payments. It offers course creation, user authentication, progress tracking, and a sleek UI. Optimized for performance, SEO, and scalability, leveraging server actions and API routes for efficiency.",
+    img: "https://i.postimg.cc/QMXnxJDd/Screenshot-2025-09-15-151320.png",
+    link: "https://lms-platform-psi-five.vercel.app/",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    title: "Duo Lingo Clone",
+    desc: "A modern Duolingo-inspired language learning application built with Next.js 14, Drizzle ORM, PostgreSQL, and Server Actions. Featuring secure Stripe integration for payments, a sleek UI powered by ShadcnUI and Tailwind, and an engaging gamified learning experience designed for performance and scalability.🚀",
+    img: "https://i.postimg.cc/D0stbfMv/Screenshot-2025-09-15-151427.png",
     link: "#",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "#",
+    title: "Ecommerce-Store",
+    desc: "A modern e-commerce shop built with Next.js 14, TypeScript, and TailwindCSS, featuring Stripe for secure payments. It includes dynamic product listings, a shopping cart, and checkout, with authentication and admin management. Optimized for performance, SEO, and scalability, leveraging server actions and API routes for efficiency.",
+    img: "https://i.postimg.cc/c4fvdQTj/Screenshot-2025-09-15-152054.png",
+    link: "https://ecommerce-store-blush-one.vercel.app/",
+  },
+    {
+    id: 5,
+    color: "from-red-300 to-white-300",
+    title: "Multi-page website",
+    desc: "A multi-page space tourism website built with Next.js 14, TypeScript, TailwindCSS, and ShadcnUI. Designed with a sleek, modern UI and fully responsive layout, it showcases seamless navigation, component reusability, and best practices for scalable front-end development.",
+    img: "https://i.postimg.cc/CLcRQFKr/Screenshot-2025-09-15-150950.png",
+    link: "https://space-tourism-multi-page-website-olive.vercel.app/",
   },
 ];
 
